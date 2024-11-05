@@ -1,0 +1,27 @@
+/* Elimina márgenes y rellenos de todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Cambia el color de todos los párrafos a azul */
+  p {
+    color: blue;
+  }
+  
+  /* Agrega fondo amarillo al párrafo con la clase "importante" */
+  p.importante {
+    background-color: yellow;
+  }
+  
+  /* Cambia el color del texto a verde y aumenta el tamaño del título con id 'titulo' */
+  #titulo {
+    color: green;
+    font-size: 2em; /* Puedes ajustar este valor para el tamaño que desees */
+  }
+  
+  /* Aplica borde rojo al campo de entrada de texto que tenga type="text" */
+  input[type="text"] {
+    border: 2px solid red;
+  }
+  

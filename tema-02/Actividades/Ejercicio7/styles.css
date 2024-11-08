@@ -1,0 +1,29 @@
+/* 1. Estilo para que todos los párrafos dentro de .container tengan texto azul */
+.container p {
+    color: blue;
+}
+
+/* 2. Estilo para que solo el h2 hijo directo de .container sea rojo */
+.container > h2 {
+    color: red;
+}
+
+/* 3. Estilo para que el primer párrafo que sigue a un h2 sea verde */
+h2 + p {
+    color: green;
+}
+
+/* 4. Estilo para que todos los párrafos después de .intro tengan un fondo amarillo */
+.intro ~ p {
+    background-color: yellow;
+}
+
+/* 5. Selector múltiple para aplicar un margen inferior de 10px a h2 y .intro */
+h2, .intro {
+    margin-bottom: 10px;
+}
+
+/* 6. Selector dependiente para cambiar el estilo de un elemento específico dentro de otro (ejemplo) */
+.container section p:first-of-type {
+    font-weight: bold;
+}

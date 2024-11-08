@@ -1,0 +1,13 @@
+/* 1. Estilo para que el primer h1 sea azul */
+h1:first-of-type {
+    color: blue;
+}
+
+/* 2. Estilo para h1 en posiciones impares (verde) y pares (rojo) */
+h1:nth-of-type(odd) {
+    color: green;
+}
+
+h1:nth-of-type(even) {
+    color: red;
+}

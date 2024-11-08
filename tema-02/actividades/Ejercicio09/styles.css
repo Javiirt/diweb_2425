@@ -1,0 +1,60 @@
+
+/* CSS Básico para Todos los Bloques */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.vh-box, .vw-box, .percent-box {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Bloque con vh y vw */
+.vh-box {
+    background-color: #3498db; /* Azul */
+    width: 50vw; /* Completa con 50vw para que ocupe el 50% del ancho del viewport */
+    height: 30vh; /* Completa con 30vh para que ocupe el 30% de la altura del viewport */
+}
+
+/* Bloque con % */
+.vw-box {
+    background-color: #2ecc71; /* Verde */
+    width: 80%; /* Completa con 80% para que ocupe el 80% del ancho del contenedor */
+    height: 200px; /* Completa con 200px para una altura fija */
+}
+
+/* Bloque con % y max-width */
+.percent-box {
+    background-color: #e74c3c; /* Rojo */
+    width: 60%; /* Completa con 60% para que ocupe el 60% del ancho del contenedor */
+    height: 200px; /* Completa con 200px para una altura fija */
+    max-width: 500px; /* Completa con 500px para limitar el ancho máximo */
+}
+
+
+/* ¿Cómo afecta cada unidad (vh, vw, %) al diseño cuando se cambia el tamaño de la ventana?
+vh: Se basa en el alto del viewport, lo que significa que el tamaño del bloque se ajusta al 30% de la altura de la ventana.
+vw: Se basa en el ancho del viewport, lo que significa que el tamaño del bloque se ajusta al 50% del ancho de la ventana.
+%: Se basa en el contenedor padre, ajustando el bloque según el 80% del ancho de su contenedor.
+
+
+¿Qué diferencias observas entre el comportamiento del .vh-box y el .vw-box?
+.vh-box utiliza vh para ajustar su altura (relativo al alto del viewport) y vw para su ancho (relativo al ancho del viewport).
+.vw-box utiliza % para su ancho (relativo al contenedor padre) y tiene una altura fija de 200px.
+
+
+¿Cómo limita el tamaño del bloque .percent-box la propiedad max-width?
+La propiedad max-width limita el ancho de .percent-box a 500px, asegurando que no crezca más allá de ese valor, incluso si el 60% del contenedor es mayor. */

@@ -1,0 +1,67 @@
+/* CSS Básico */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* 1. Estilo para el título principal (h1) */
+h1 {
+    font-family: Georgia, serif;
+    /* Define una familia de fuente específica (por ejemplo, serif) */
+    font-size: 36px;
+    /* Ajusta el tamaño del título */
+    font-weight: bold;
+    /* Aplica un peso de fuente (bold, normal, etc.) */
+    text-transform: uppercase;
+    /* Aplica mayúsculas o capitalización */
+}
+
+/* 2. Estilo para el primer párrafo (p.parrafo1) */
+.parrafo1 {
+    font-family: Verdana, sans-serif;
+    /* Prueba una fuente sans-serif (como Verdana o Arial) */
+    font-size: 18px;
+    /* Define un tamaño de fuente adecuado para el párrafo */
+    font-weight: normal;
+    /* Usa un peso de fuente ligero o regular */
+}
+
+/* 3. Estilo para el segundo párrafo (p.parrafo2) */
+.parrafo2 {
+    font-size: 16px;
+    /* Aplica un tamaño de fuente más grande o pequeño para experimentar */
+    font-style: italic;
+    /* Usa un estilo de fuente en cursiva */
+    text-transform: capitalize;
+    /* Prueba con mayúsculas, minúsculas o capitalización */
+    letter-spacing: 1px;
+    /* Ajusta el espacio entre letras */
+}
+
+/* 4. Estilo para el tercer párrafo (p.parrafo3) con Google Fonts */
+/* Importa una fuente desde Google Fonts antes de comenzar el archivo CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.parrafo3 {
+    font-family: 'Roboto', sans-serif;
+    /* Aplica la fuente importada */
+    font-size: 18px;
+    /* Define un tamaño de fuente cómodo para leer */
+    font-weight: 300;
+    /* Usa un peso más ligero o más grueso para el estilo */
+    line-height: 1.8;
+    /* Ajusta el interlineado para facilitar la lectura */
+}
+
+
+/*
+¿Qué diferencias notas en la legibilidad entre las fuentes serif y sans-serif?
+Serif es tradicional y elegante, ideal para títulos y textos impresos. Sans-serif es moderna, clara y mejor para pantallas.
+
+¿Cómo afecta el tamaño de la fuente y el interlineado a la comodidad de lectura?
+Da un tamaño mayor y un interlineado amplio facilitan la lectura y reducen la fatiga visual.
+
+¿Cuál es tu combinación de propiedades favorita para títulos y párrafos?
+Títulos: Sans-Serfi, 36px, bold, uppercase.
+Párrafos: Roboto, 18px, interlineado 1.8.
+*/

@@ -1,0 +1,70 @@
+/*
+Crea un archivo CSS llamado styles.css. Sigue las instrucciones de estilo para aplicar a cada lista en tu archivo styles.css:
+
+1. Lista ordenada de tareas (ol.tareas):
+
+Usa el estilo list-style-type con valores como decimal-leading-zero.
+Ajusta la posición de la lista usando list-style-position para que las marcas de lista queden dentro del texto.
+Cambia el color del texto de los elementos de la lista a un tono azul oscuro, como #003366.
+2. Lista no ordenada de materiales (ul.materiales):
+
+Cambia el tipo de lista con list-style-type usando un estilo square.
+Aplica list-style-position para que las marcas queden fuera del texto.
+Cambia el color del texto a un tono verde oscuro, como #2a7a1f.
+3. Lista personalizada de recursos de estudio (ul.recursos):
+
+Usa una imagen personalizada para los elementos de la lista mediante list-style-image. Puedes usar una imagen, como un pequeño ícono de libro o una estrella.
+*/
+
+/* Estilo para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Estilo para el título principal */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los subtítulos de sección */
+h2 {
+    color: #444;
+    margin-top: 20px;
+}
+
+/* 1. Estilo para la lista ordenada de tareas */
+ol.tareas {
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+    color: #003366;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+/* 2. Estilo para la lista no ordenada de materiales */
+ul.materiales {
+    list-style-type: square;
+    list-style-position: outside;
+    color: #2a7a1f;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+/* 3. Estilo para la lista personalizada de recursos de estudio */
+ul.recursos {
+    list-style-image: url('https://www.google.com/imgres?q=icono%20archivo&imgurl=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F512%2F1440%2F1440373.png&imgrefurl=https%3A%2F%2Fwww.flaticon.es%2Ficono-gratis%2Farchivos-y-carpetas_1440373&docid=TsqS6URtBnufNM&tbnid=D29fWqBTDq3_yM&vet=12ahUKEwj_lP_RpN6JAxUXfKQEHSmxNg4QM3oECFQQAA..i&w=512&h=512&hcb=2&ved=2ahUKEwj_lP_RpN6JAxUXfKQEHSmxNg4QM3oECFQQAA'); /* Cambia icono.png por la ruta de tu imagen */
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+/* Estilo general para los elementos de lista */
+li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}

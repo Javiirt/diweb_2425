@@ -1,0 +1,120 @@
+
+/*1. Estiliza el cuerpo (body):
+
+Usa una fuente sans-serif por defecto, como Arial.
+Define un tamaño de fuente base de 16px.
+Ajusta la altura de línea a 1.6.*/
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/*
+2. Estilo para el título principal (h1) en el header:
+
+Usa una fuente serif, como Georgia.
+Define el tamaño de fuente en 36px.
+Aplica un color oscuro, como #333.
+Alinea el texto al centro y usa la propiedad text-transform para poner el título en mayúsculas.*/
+
+h1{
+    font-family: Georgia, serif;
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*
+3. Estilo para el párrafo introductorio (p.intro) en el header:
+
+Usa una fuente en cursiva.
+Define un tamaño de fuente un poco más pequeño, como 14px.
+Cambia el color a un tono gris, como #666.*/
+p.intro{
+    font-style: italic;
+    font-size: 36px;
+    color: #666;
+}
+/*
+4. Estilo para los subtítulos (h2) en el section:
+
+Usa una fuente sans-serif, como Verdana.
+Define un tamaño de fuente de 24px.
+Aplica un color azul, como #007acc.
+Añade un subrayado usando text-decoration.*/
+
+h2{
+    font-family: Verdana, sans-serif;
+    font-size: 24px;
+    color: #007acc;
+    text-decoration: underline;
+}
+
+/*
+5. Estilo para el primer párrafo de texto (p.text1):
+
+Usa una fuente sans-serif.
+Define un tamaño de fuente de 16px.
+Aplica un interlineado de 1.5.
+Justifica el texto usando text-align.*/
+
+p.text1 {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+/*
+6. Estilo para el bloque de cita (blockquote.highlight):
+
+Usa una fuente serif y cambia el color a un tono verde oscuro, como #2a7a1f.
+Aplica un fondo de color suave, como #f0f8f8.
+Agrega un margen a la izquierda usando margin-left.
+Añade un borde a la izquierda, de 3px, en un tono verde.*/
+
+blockquote.highlight {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    color: #2a7a1f;
+    background-color: #f0f8f8;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-left: 3px solid #2a7a1f;
+    font-style: italic;
+}
+
+/*
+7. Estilo para el segundo párrafo de texto (p.text2):
+
+Usa un estilo de texto en negrita.
+Define un tamaño de fuente de 16px y aplica un espacio entre letras de 1px.
+Cambia el color a un tono oscuro, como #444.*/
+
+p.text2 {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #444;
+    margin: 15px 0;
+}
+
+/*
+8. Estilo para el pie de página (footer):
+
+Usa un tamaño de fuente más pequeño, como 12px.
+Centra el texto y cambia el color a un tono gris claro, como #888
+*/
+
+footer {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+}

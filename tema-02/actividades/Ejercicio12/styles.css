@@ -1,0 +1,39 @@
+
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* 1. Estilo para el título principal (h1) */
+h1 {
+    color: blue; /* Cambia el color del título */
+    font-size: 36px; /* Define el tamaño del título en píxeles */
+    text-align: center; /* Centra el título */
+    text-transform: uppercase; /* Aplica mayúsculas al texto del título */
+}
+
+/* 2. Estilo para el subtítulo (h2) */
+h2 {
+    font-size: 30px; /* Reduce el tamaño en comparación con el h1 */
+    color: blueviolet; /* Cambia el color del subtítulo */
+    letter-spacing: 1.5; /* Ajusta el espaciado entre letras */
+    text-decoration: underline; /* Añade una línea inferior, superior o de otro tipo */
+}
+
+/* 3. Estilo para el párrafo (p) */
+p {
+    font-size: 16px; /* Aplica un tamaño de fuente cómodo para leer */
+    color: darkgray; /* Cambia el color del texto */
+    text-align: justify; /* Justifica el texto para mejorar su presentación */
+    text-indent: 20px; /* Indenta la primera línea del párrafo */
+}
+
+/* 4. Estilo para el bloque de cita (blockquote) */
+blockquote {
+    font-style: italic; /* Aplica estilo en cursiva */
+    color: #2c3e50; /* Cambia el color del bloque de cita */
+    background-color: #ecf0f1; /* Usa un color de fondo suave para resaltarlo */
+    padding: 20px; /* Añade espacio alrededor del texto */
+    border-left: 5px solid #3498db; /* Añade una línea de color a la izquierda para destacar */
+}

@@ -1,0 +1,38 @@
+/* Regla de elemento: Color para todos los encabezados <h1> */
+h1 {
+    color: blue;
+}
+
+/* Regla de clase: Color específico para la clase "titulo" */
+.titulo {
+    color: green;
+}
+
+/* Regla de ID: Color para el elemento con ID "parrafo" */
+#parrafo {
+    color: orange;
+}
+
+/* Regla con !important: Color para elementos con la clase "texto" dentro de un div */
+div .texto {
+    color: purple !important;
+}
+
+/* Última regla: Color para todos los elementos <p> */
+p {
+    color: gray;
+}
+
+
+/*
+
+● ¿Qué color se aplica finalmente al encabezado <h1>? Explica cuál fue la regla ganadora y por qué.
+El rojo porque el estilo en línea tiene la mayor prioridad, superando a las reglas externas.
+
+● ¿Cuál es el color del párrafo con el ID parrafo? ¿Qué regla prevalece?
+El naranja ya que el id prevalece sobre la regla general para <p> debido a su mayor especificidad.
+
+● ¿Qué color tiene el párrafo con la clase texto dentro del div contenedor? Explica por qué se aplica ese color en particular
+El morado porque !important tiene la mayor prioridad y supera cualquier otra regla, incluso las de clase o general.
+
+*/

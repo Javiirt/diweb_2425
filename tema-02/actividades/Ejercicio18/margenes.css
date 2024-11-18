@@ -1,0 +1,17 @@
+/* Primera Sección */
+.seccion1 {
+    margin: 20px; /* Márgenes uniformes de 20px */
+    background-color: #f0f8ff; /* Fondo azul claro */
+}
+
+/* Segunda Sección */
+.seccion2 {
+    margin: 10px 20px 30px 40px; /* Márgenes: arriba, derecha, abajo, izquierda */
+    background-color: #d1f7c4; /* Fondo verde claro */
+}
+
+/* Tercera Sección (Botón) */
+.seccion3 button {
+    margin: 50px auto; /* Margen superior de 50px, centrado horizontalmente */
+    display: block; /* Necesario para que margin: auto funcione en un botón */
+}

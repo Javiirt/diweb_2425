@@ -1,0 +1,23 @@
+/* Primera Sección */
+.seccion1 {
+    padding: 20px; /* Relleno uniforme de 20px */
+    background-color: #f0f8ff; /* Fondo azul claro */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Segunda Sección */
+.seccion2 {
+    padding: 10px 15px 20px 25px; /* Relleno: arriba, derecha, abajo, izquierda */
+    background-color: #d1f7c4; /* Fondo verde claro */
+}
+
+/* Tercera Sección (Botón) */
+.seccion3 button {
+    padding: 30px 50px; /* Relleno: arriba/abajo 30px, izquierda/derecha 50px */
+    background-color: #007acc; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+}
+

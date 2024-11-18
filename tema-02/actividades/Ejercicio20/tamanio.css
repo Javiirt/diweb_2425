@@ -1,0 +1,21 @@
+/* Primera Sección: Tamaño Fijo */
+.seccion1 div {
+    width: 200px; /* Ancho fijo */
+    height: 150px; /* Alto fijo */
+    background-color: #f0a1a8; /* Fondo rosa */
+}
+
+/* Segunda Sección: Porcentaje de Ancho */
+.seccion2 div {
+    width: 50%; /* Ancho relativo al contenedor padre */
+    height: 100px; /* Alto fijo */
+    background-color: #a1d4f0; /* Fondo azul claro */
+}
+
+/* Tercera Sección: Altura Mínima y Máxima */
+.seccion3 div {
+    width: 300px; /* Ancho fijo */
+    min-height: 100px; /* Altura mínima */
+    max-height: 200px; /* Altura máxima */
+    background-color: #a1f0a6; /* Fondo verde claro */
+}

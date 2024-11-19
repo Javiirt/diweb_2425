@@ -1,0 +1,34 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Primera Sección: Estilo de Contorno */
+.estilo-contorno {
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    background-color: #f0f0f0;
+    outline: 3px dotted #007acc; /* Contorno punteado azul */
+}
+
+/* Segunda Sección: Ancho de Contorno */
+.ancho-contorno {
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    background-color: #e8f8e8;
+    outline: 5px solid #2a7a1f; /* Contorno sólido verde */
+}
+
+/* Tercera Sección: Desplazamiento del Contorno */
+.desplazamiento-contorno {
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    background-color: #fff4e5;
+    outline: 4px dashed #ff8800; /* Contorno discontinuo naranja */
+    outline-offset: 10px; /* Desplazamiento de 10px */
+}

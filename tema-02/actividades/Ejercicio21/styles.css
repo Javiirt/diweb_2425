@@ -1,0 +1,22 @@
+/*
+Crea un HTML con un elemento div que
+contenga un texto cualquiera. Luego
+aplícale los estilos siguientes:
+    1. Fondo gris
+    2. Ancho de 300px
+    3. Borde de 15px sólido y verde
+    4. Relleno de 50px
+    5. Margen de 20px
+Calcula la anchura y altura total del div
+
+Anchura Total=width+2×(padding+border) + margin = 470px
+Altura Total=height+2×(padding+border) + margin = 310px
+*/
+
+div{
+    background-color: gray;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin:  20px;
+}

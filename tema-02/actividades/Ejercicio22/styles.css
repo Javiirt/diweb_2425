@@ -1,0 +1,17 @@
+/* Estilo general para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Estilo general para secciones */
+section {
+    margin: 20px 0;
+}
+
+/* Personalización de iconos */
+.custom-icon {
+    color: #ff5722; /* Color naranja */
+    font-size: 48px; /* Tamaño grande */
+}

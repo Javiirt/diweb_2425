@@ -1,0 +1,41 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+/* Block element */
+.block {
+    display: block;
+    background-color: #007acc;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Inline elements */
+.inline {
+    display: inline;
+    background-color: #ffd700;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+/* Inline-block elements */
+.inline-block {
+    display: inline-block;
+    background-color: #90ee90;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #008000;
+}
+
+/* Hidden element */
+.none {
+    display: none;
+    background-color: #ff7f7f;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ff0000;
+}

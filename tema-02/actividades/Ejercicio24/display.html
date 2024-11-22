@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad Display</title>
+    <link rel="stylesheet" href="display.css">
+</head>
+<body>
+    <h1>Ejemplo de la Propiedad Display</h1>
+    <p>La propiedad <strong>display</strong> determina cómo un elemento se presenta en el flujo del documento. Los valores más comunes son:</p>
+    <ul>
+        <li><strong>block:</strong> El elemento ocupa todo el ancho disponible.</li>
+        <li><strong>inline:</strong> El elemento ocupa solo el espacio necesario en línea con otros.</li>
+        <li><strong>inline-block:</strong> Combina características de block e inline.</li>
+        <li><strong>none:</strong> Oculta completamente el elemento.</li>
+    </ul>
+
+    <section>
+        <h2>Ejemplos</h2>
+        <div class="block">Este es un elemento con display: block.</div>
+        <span class="inline">Elemento inline 1</span>
+        <span class="inline">Elemento inline 2</span>
+        <span class="inline">Elemento inline 3</span>
+        <div class="inline-block">Elemento inline-block 1</div>
+        <div class="inline-block">Elemento inline-block 2</div>
+        <p class="none">Este elemento está oculto con display: none.</p>
+        <button id="toggleVisibility">Mostrar/Ocultar Elemento Oculto</button>
+    </section>
+
+    <script>
+        const toggleBtn = document.getElementById('toggleVisibility');
+        const hiddenElement = document.querySelector('.none');
+        toggleBtn.addEventListener('click', () => {
+            if (hiddenElement.style.display === 'none') {
+                hiddenElement.style.display = 'block';
+            } else {
+                hiddenElement.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

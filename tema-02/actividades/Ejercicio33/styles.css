@@ -1,0 +1,44 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.menu {
+    display: flex;
+    gap:10px;
+}
+
+button {
+    width: 1024px;  /* Tamaño de cada icono */
+    height: 1024px; /* Tamaño de cada icono */
+    background: url('css_sprites.png') no-repeat;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+
+/* Posiciones del sprite para cada imagen */
+button.inicio {
+    background-position: 0 0; /* Primera imagen */
+}
+
+button.buscar {
+    background-position: -1024px 0; /* Segunda imagen */
+}
+
+button.configuracion {
+    background-position: 0 -1024px; /* Tercera imagen */
+}
+
+

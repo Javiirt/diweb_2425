@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-clases: Hijos y Hermanos</title>
+    <style>
+        /* Estiliza el primer hijo de cada lista (ul) con un color de fondo diferente */
+        ul li:first-child {
+            background-color: lightblue;
+        }
+
+        /* Estiliza el último hijo de cada lista con texto en negrita */
+        ul li:last-child {
+            font-weight: bold;
+        }
+
+        /* Aplica un estilo único al tercer elemento de la lista de tareas */
+        .tareas li:nth-child(3) {
+            color: darkgreen;
+            font-style: italic;
+        }
+
+        /* Cambia el color de texto de los hermanos inmediatos del elemento que contiene "Pagar facturas" */
+        .tareas li:nth-child(3) + li,
+        .tareas li:nth-child(3) ~ li {
+            color: darkred;
+        }
+
+        /* Agrega un borde al segundo hijo de la lista de contactos */
+        .contactos li:nth-child(2) {
+            border: 2px solid orange;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de tareas</h1>
+    <ul class="tareas">
+        <li>Comprar comida</li>
+        <li>Limpiar la casa</li>
+        <li>Pagar facturas</li>
+        <li>Estudiar CSS</li>
+        <li>Preparar la cena</li>
+    </ul>
+
+    <h1>Contactos</h1>
+    <ul class="contactos">
+        <li>Juan</li>
+        <li>María</li>
+        <li>Pedro</li>
+        <li>Luisa</li>
+    </ul>
+</body>
+</html>

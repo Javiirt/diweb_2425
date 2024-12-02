@@ -1,0 +1,38 @@
+/* Primera línea de cada párrafo */
+p::first-line {
+    color: blue;
+    font-size: larger;
+}
+
+/* Primera letra de cada párrafo */
+p::first-letter {
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Mensaje antes del contenido principal */
+body::before {
+    content: "¡Prepárate para aprender CSS!";
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: blueviolet;
+}
+
+/* Mensaje después del contenido principal */
+body::after {
+    content: "¡Sigue practicando y mejora cada día!";
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: blueviolet;
+}
+
+/* Selección de texto */
+*::selection {
+    background-color: brown;
+    color: white;
+}

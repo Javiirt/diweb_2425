@@ -1,0 +1,48 @@
+/* 1. Usar herencia para aplicar un color de texto general a todo el documento */
+body {
+    color: #333; /* Color de texto general */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* 2. Los párrafos dentro de la sección deben usar una fuente diferente */
+  section p {
+    font-family: 'Courier New', monospace;
+  }
+  
+  /* 3. El elemento con la clase highlight debe tener un fondo amarillo y texto en negrita */
+  .highlight {
+    background-color: yellow;
+    font-weight: bold;
+  }
+  
+  /* 4. El párrafo con id="override" debe sobrescribir el color de texto general */
+  #override {
+    color: red; /* Sobrescribe el color general */
+  }
+  
+  /* 5. El título principal (h1) hereda el color general pero tiene un tamaño mayor */
+  h1.title {
+    font-size: 2em; /* Tamaño mayor que el texto general */
+    color: inherit; /* Hereda el color del body */
+  }
+  
+  /* 6. Usar una regla con !important para ganar prioridad */
+  footer p {
+    color: blue !important; /* Asegura que el pie de página siempre sea azul */
+  }
+  
+
+  /*
+    1. ¿Qué sucede si cambias el orden de las reglas CSS?
+        Las reglas más abajo en el archivo tienen mayor prioridad.
+
+    2. ¿Cómo afecta la especificidad a los estilos aplicados en el párrafo #override?
+        El id tiene mayor especificidad y sobrescribe otras reglas.
+
+    3. ¿Qué sucede si eliminas el !important de alguna regla?
+        La regla pierde prioridad frente a otras más específicas.
+
+    4. ¿Qué reglas son heredadas automáticamente y cuáles necesitas especificar explícitamente?
+        Propiedades como color y font-family se heredan; otras como background no.
+  
+  */

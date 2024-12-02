@@ -1,0 +1,72 @@
+
+/* Elemento de bloque centrado */
+.bloque-centrado {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #007acc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Texto centrado dentro de un contenedor */
+.texto-centrado {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #ffcc00;
+    border: 2px dashed #333;
+}
+
+/* Imagen centrada */
+.imagen-centrada {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imagen-centrada img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Elementos alineados a la izquierda y derecha */
+.alineados {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #e6e6e6;
+}
+
+.izquierda {
+    text-align: left;
+    color: #007acc;
+}
+
+.derecha {
+    text-align: right;
+    color: #ff5733;
+}
+
+/* Elemento centrado verticalmente */
+.centrado-vertical {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #2ecc71;
+    color: white;
+    margin: 20px 0;
+}
+
+/*
+
+¿Qué sucede si quitas el margin: auto?
+El elemento ya no se centra y quedará alineado al borde izquierdo del contenedor.
+
+
+¿Cómo afecta la altura al centrado vertical con line-height?
+Si el valor de line-height no coincide con la altura del contenedor, 
+el texto no se alinea perfectamente al centro vertical.
+
+*/

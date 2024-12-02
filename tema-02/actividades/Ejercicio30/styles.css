@@ -1,0 +1,21 @@
+/* Enlace no visitado */
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Enlace visitado */
+a:visited {
+    color: purple;
+}
+
+/* Enlace cuando el puntero está encima */
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Opcional: Enlace mientras se hace clic */
+a:active {
+    color: orange;
+}

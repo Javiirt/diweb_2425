@@ -1,0 +1,44 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+/* Cuadrados */
+.square {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 2px solid black;
+    opacity: 0.9;
+}
+
+/* Cuadrado rojo (z-index: 1) */
+.red {
+    background-color: red;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+
+/* Cuadrado azul (z-index: 3 - se apila encima) */
+.blue {
+    background-color: blue;
+    top: 80px;
+    left: 80px;
+    z-index: 3;
+}
+
+/* Cuadrado verde (z-index: 2) */
+.green {
+    background-color: green;
+    top: 110px;
+    left: 110px;
+    z-index: 2;
+}

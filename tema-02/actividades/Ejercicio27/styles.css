@@ -1,0 +1,30 @@
+/* General Styles */
+
+.container {
+    width: 90%;
+}
+
+.column {
+    float: left;
+    width: 20%; 
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.extra {
+    background-color: #add8e6; /* Diferente color para identificarla */
+}
+
+footer {
+    clear: both; /* Garantiza que el pie de página no sea afectado por los flotantes */
+}
+
+
+/*
+1. ¿Qué sucede si no se usa clear?
+El pie de página queda afectado por los elementos flotantes, desplazándose al lado de las columnas.
+
+2. ¿Qué otros elementos además de clear pueden solucionar problemas similares?
+
+
+*/

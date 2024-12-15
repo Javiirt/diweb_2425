@@ -74,7 +74,7 @@ body {
 }
 
 /* Estilos del Encabezado Principal */
-header.hola {
+header.cabecera {
     background-image: url("https://media.istockphoto.com/id/538489900/es/foto/estadio-de-f%C3%BAtbol-con-reflectores.jpg?s=612x612&w=0&k=20&c=m_H92mTplMf4ljBMpfGzYX6vGPxPC4Iub9bNA5_r4A8=");
     background-color: #fe2a00;
     background-size: cover;
@@ -83,7 +83,7 @@ header.hola {
     padding: 100px 20px;
 }
 
-header.hola h1 {
+header.cabecera h1 {
     font-size: 48px;
     margin: 0;
 }

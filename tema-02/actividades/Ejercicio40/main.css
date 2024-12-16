@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-header__title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.nav-primary {
+    margin-top: 10px;
+}
+
+.nav-primary__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-primary__link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-primary__link:hover {
+    color: #ffcc00;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card__title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card__description {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+.main-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.main-footer__text {
+    font-size: 0.9em;
+}

@@ -1,0 +1,75 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.gallery {
+    display: grid;
+    gap: 20px; /* Espaciado inicial para pantallas grandes */
+    width: 90%; /* Asegura que el contenido esté centrado */
+    max-width: 1200px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid white; /* Borde blanco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout para pantallas grandes (≥ 1024px) */
+@media (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+        grid-template-areas:
+            "img1 img2 img3"
+            "img4 img4 img4"
+            "img5 img6 img7";
+    }
+
+    .gallery img:nth-child(1) { grid-area: img1; }
+    .gallery img:nth-child(2) { grid-area: img2; }
+    .gallery img:nth-child(3) { grid-area: img3; }
+    .gallery img:nth-child(4) { grid-area: img4; }
+    .gallery img:nth-child(5) { grid-area: img5; }
+    .gallery img:nth-child(6) { grid-area: img6; }
+    .gallery img:nth-child(7) { grid-area: img7; }
+}
+
+/* Layout para pantallas medianas (768px – 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+        gap: 15px; /* Espaciado menor */
+        grid-template-areas:
+            "img1 img2"
+            "img4 img4"
+            "img5 img6"
+            "img7 .";
+    }
+
+    .gallery img:nth-child(1) { grid-area: img1; }
+    .gallery img:nth-child(2) { grid-area: img2; }
+    .gallery img:nth-child(3) { display: none; } 
+    .gallery img:nth-child(4) { grid-area: img4; }
+    .gallery img:nth-child(5) { grid-area: img5; }
+    .gallery img:nth-child(6) { grid-area: img6; }
+    .gallery img:nth-child(7) { grid-area: img7; }
+}
+
+
+/* Layout para pantallas pequeñas (≤ 767px) */
+@media (max-width: 767px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Una columna */
+        gap: 10px; /* Espaciado más pequeño */
+    }
+}

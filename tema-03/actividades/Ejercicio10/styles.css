@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    height: 20vh;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden; 
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('coche7.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(1.2) blur(5px); /* Aclarar y difuminar la imagen */
+    z-index: 1; /* Queda detrás del texto */
+}
+
+
+.header h1 {
+    z-index: 2; /* Para mantener el texto por encima del fondo */
+    position: relative;
+    filter: brightness(1) blur(0px); /* Aclarar y difuminar la imagen */
+    font-size: 3rem;
+}
+
+
+/* Fotos */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.galeria img {
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* imagen-adaptada */
+.imagen-adaptada {
+    text-align: center;
+    padding: 20px;
+}
+
+.imagen-adaptada img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.imagen-adaptada p {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer a {
+    display: inline-flex;
+    align-items: center; 
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: red;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.footer a:hover {
+    background-color: darkred;
+}
+
+.footer .icono {
+    width: 20px; 
+    height: 20px;
+    margin-right: 10px; 
+}
+
+
+/* imagenes responsive */
+.responsive {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+picture img {
+    max-width: 100%;
+    height: auto;
+}

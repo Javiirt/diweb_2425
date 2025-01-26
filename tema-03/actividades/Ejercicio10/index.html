@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3.10</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Chevrolet Corvette Cabrio</h1>
+    </div>
+
+    <!-- galeria -->
+    <div class="galeria">
+        <img src="coche5.jpg" alt="Logo Chevrolet Corvette">
+        <img src="coche6.jpg" alt="Chevrolet Corvette rojo de frente">
+        <img src="coche2.jpg" alt="Volante Chevrolet Corvette rojo">
+    </div>
+
+    <!-- imagen adaptada -->
+    <div class="imagen-adaptada">
+        <picture>
+            <source srcset="coche3.jpg" media="(min-width: 1024px)">
+            <source srcset="coche1.jpg" media="(min-width: 768px)">
+            <img src="coche4.jpg" alt="Chevrolet Corvette Cabrio 1960 rojo" loading="lazy">
+        </picture>
+        <p>El Chevrolet Corvette es un automóvil deportivo producido por el fabricante estadounidense Chevrolet,
+            división de General Motors (GM), desde 1953. Es fabricado actualmente en la planta de Bowling Green
+            (Kentucky), donde también se encuentra el Museo Nacional del Corvette. Anteriormente era fabricado en Flint
+            (Míchigan) y San Luis (Misuri). Fue el primer deportivo construido por la firma.</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="#">
+            <img src="cesta.png" alt="Icono de Comprar" class="icono">
+            Comprar
+        </a>
+    </div>
+
+</body>
+
+</html>

@@ -160,11 +160,6 @@
     background-color: #f1f1f1;
     text-align: center;
     padding: 20px 0;
-    font-size: 10px; /* Texto más pequeño */
-    color: #999; /* Color gris más claro */
-    text-align: center; /* Centrar el texto */
-    margin-top: 10px; /* Menos espacio arriba */
-    opacity: 0.7; /* Hacerlo menos visible */
 }
 
 .footer .social-links {
@@ -194,7 +189,4 @@
 .footer-links a:hover {
     color: #ff3b30;
 }
-
-
-
 

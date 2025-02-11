@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" id="stylesheet" href="cesta.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="GearUpTees.png" alt="Logo Gear Up Tees">
+            <span>Gear Up Tees</span>
+        </div>
+        <ul class="nav-links">
+            <button id="toggleMode">Cambiar a Modo Oscuro</button>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="login.html">Iniciar Sesión</a></li>
+            <li><a href="cesta.html">Cesta</a></li>
+        </ul>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="header">
+        CESTA
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <section class="cart-items">
+            <!-- Primer item del carrito -->
+            <div class="card">
+                <img src="https://jerseys4all.com/cdn/shop/files/70fb36d2_700x700.jpg?v=1722684876"
+                    alt="Camiseta Real Madrid">
+                <div class="card-info">
+                    <h3>Camiseta 3ª Real Madrid 2024/2025</h3>
+                    <p>adidas - Fútbol - Niño</p>
+                    <p>Talla: M</p>
+                    <p>Cantidad: 1</p>
+                </div>
+                <div class="card-price">
+                    <p>20€</p>
+                </div>
+            </div>
+
+            <!-- Segundo item del carrito -->
+            <div class="card">
+                <img src="https://imbictoz.com/wp-content/uploads/2024/05/camiseta-barcelona-2025.jpeg"
+                    alt="Camiseta FC Barcelona">
+                <div class="card-info">
+                    <h3>Camiseta 1ª FC Barcelona 2024/2025 Match</h3>
+                    <p>Nike - Fútbol - Hombre</p>
+                    <p>Talla: S</p>
+                    <p>Cantidad: 1</p>
+                </div>
+                <div class="card-price">
+                    <p>20€</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resumen del pedido -->
+        <section class="summary">
+            <h3>Resumen</h3>
+            <div class="summary-item">
+                <p>Subtotal</p>
+                <p>40€</p>
+            </div>
+            <div class="summary-item">
+                <p>Gastos de envío estimado</p>
+                <p>GRATIS</p>
+            </div>
+            <div class="summary-item total">
+                <p>Total</p>
+                <p>40€</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="social-links">
+            <img src="https://cdn.pixabay.com/photo/2015/08/03/13/58/whatsapp-873316_640.png" alt="WhatsApp">
+            <img src="https://cdn.pixabay.com/photo/2022/04/01/05/40/app-7104075_640.png" alt="Instagram">
+            <img src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_640.png" alt="Facebook">
+            <img src="https://cdn.pixabay.com/photo/2017/06/22/14/23/twitter-2430933_640.png" alt="Twitter">
+
+        </div>
+        <div class="footer-links">
+            <a href="#">Ayuda</a> | <a href="#">Tarjeta regalo</a> | <a href="#">Guía de tallas</a>
+        </div>
+    </footer>
+
+    <script>
+        // Obtener los elementos necesarios
+        const toggleButton = document.getElementById("toggleMode");
+        const stylesheet = document.getElementById("stylesheet");
+
+        // Función para cambiar el CSS
+        toggleButton.addEventListener("click", function () {
+            // Comprobar qué CSS está activo y cambiarlo
+            if (stylesheet.getAttribute("href") === "cesta.css") {
+                stylesheet.setAttribute("href", "cestaOscuro.css");
+                toggleButton.textContent = "Cambiar a Modo Claro"; // Cambiar texto del botón
+            } else {
+                stylesheet.setAttribute("href", "cesta.css");
+                toggleButton.textContent = "Cambiar a Modo Oscuro"; // Cambiar texto del botón
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>

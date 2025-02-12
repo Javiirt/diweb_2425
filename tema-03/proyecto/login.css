@@ -33,6 +33,11 @@ body {
 .logo img {
     height: 60px;
     margin-right: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.logo img:hover {
+    transform: rotate(360deg);
 }
 
 .logo span {
@@ -93,7 +98,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px 0;
-    background: url('https://cdn.pixabay.com/photo/2024/10/09/23/53/ai-generated-9109557_640.jpg') no-repeat center center;
+    background-image: url('media/FondoLogin.png');
+    background-position: center center;
     background-size: cover;
 }
 
@@ -240,4 +246,29 @@ h3 {
         flex-direction: column;
         gap: 10px;
     }
+
+    
+}
+
+/* Créditos */
+.footer .credits {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer .credits a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.footer .credits a:hover {
+    color: #ff3b30;
+    text-decoration: underline;
 }

@@ -13,7 +13,7 @@
     <!-- Barra de navegación -->
     <nav class="navbar">
         <div class="logo">
-            <img src="GearUpTees.png" alt="Logo Gear Up Tees">
+            <img src="media/GearUpTees.png" alt="Logo Gear Up Tees">
             <span>Gear Up Tees</span>
         </div>
         <ul class="nav-links">
@@ -34,12 +34,15 @@
         <section class="cart-items">
             <!-- Primer item del carrito -->
             <div class="card">
-                <img src="https://jerseys4all.com/cdn/shop/files/70fb36d2_700x700.jpg?v=1722684876"
-                    alt="Camiseta Real Madrid">
+                <picture>
+                    <source srcset="media/madrid.avif" type="image/avif">
+                    <source srcset="media/madrid.png" type="image/png">
+                    <img src="media/madrid.jpg" alt="Camiseta madrid 2023">
+                </picture>
                 <div class="card-info">
-                    <h3>Camiseta 3ª Real Madrid 2024/2025</h3>
+                    <h3>Camiseta Real Madrid 2023</h3>
                     <p>adidas - Fútbol - Niño</p>
-                    <p>Talla: M</p>
+                    <p>Talla: 12 años</p>
                     <p>Cantidad: 1</p>
                 </div>
                 <div class="card-price">
@@ -49,10 +52,13 @@
 
             <!-- Segundo item del carrito -->
             <div class="card">
-                <img src="https://imbictoz.com/wp-content/uploads/2024/05/camiseta-barcelona-2025.jpeg"
-                    alt="Camiseta FC Barcelona">
+                <picture>
+                    <source srcset="media/barcelona.avif" type="image/avif">
+                    <source srcset="media/barcelona.png" type="image/png">
+                    <img src="media/barcelona.jpg" alt="Camiseta Barcelona 2023">
+                </picture>
                 <div class="card-info">
-                    <h3>Camiseta 1ª FC Barcelona 2024/2025 Match</h3>
+                    <h3>Camiseta 1ª FC Barcelona 2023</h3>
                     <p>Nike - Fútbol - Hombre</p>
                     <p>Talla: S</p>
                     <p>Cantidad: 1</p>
@@ -79,6 +85,15 @@
                 <p>40€</p>
             </div>
         </section>
+
+        <!-- Video -->
+        <section class="video">
+            <h3>Video del Producto</h3>
+            <video width="320" height="240" controls>
+                <source src="media/ankara.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </section>
     </main>
 
     <!-- Pie de página -->
@@ -92,6 +107,16 @@
         </div>
         <div class="footer-links">
             <a href="#">Ayuda</a> | <a href="#">Tarjeta regalo</a> | <a href="#">Guía de tallas</a>
+        </div>
+        <div class="credits">
+            <p>Imágenes utilizadas con permiso de sus autores:</p>
+                <br>
+                <a href="https://www.camisetasfutboleses.com/" target="_blank">camisetasfutboleses</a>
+                <br><br>
+                <a href="https://imbictoz.com/" target="_blank">imbictoz</a>
+                <br><br>
+                <a href="https://www.futbolmania.com/" target="_blank">futbolmania</a>
+            
         </div>
     </footer>
 

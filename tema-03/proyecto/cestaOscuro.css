@@ -33,6 +33,11 @@ body {
 .logo img {
     height: 60px;
     margin-right: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.logo img:hover {
+    transform: rotate(360deg);
 }
 
 .logo span {
@@ -252,3 +257,26 @@ button {
     color: #000000;
   }
   
+
+  /* Créditos */
+  .footer .credits {
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 10px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer .credits a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.footer .credits a:hover {
+    color: #ff6347;
+    text-decoration: underline;
+}

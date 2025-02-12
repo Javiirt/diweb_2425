@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+    <style>
+        /* Ejercicio 1 */
+        @keyframes mover {
+            0% {
+                transform: translateX(0) scale(1);
+                color: red;
+            }
+
+            25% {
+                transform: translateX(50vw) scale(1.5);
+                color: blue;
+            }
+
+            50% {
+                transform: translateX(100vw) scale(2);
+                color: green;
+            }
+
+            75% {
+                transform: translateX(50vw) scale(1.5);
+                color: purple;
+            }
+
+            100% {
+                transform: translateX(0) scale(1);
+                color: red;
+            }
+        }
+
+        h1 span {
+            display: inline-block;
+            animation: mover 4s linear 1s 2 forwards;
+        }
+
+
+        /* Ejercicio 2 */
+        a {
+            display: inline-block;
+            font-size: 20px;
+            text-decoration: none;
+            color: blue;
+            transition: transform 0.5s linear, color 0.5s linear;
+        }
+
+        a:hover {
+            transform: scale(2) rotate(180deg);
+            color: red;
+        }
+
+
+        /* Ejercicio 3 */
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: blue;
+            transition: background-color 1s ease;
+        }
+
+        .circle:hover {
+            background-color: red;
+        }
+
+        /* Con steps(4) */
+        .circle-steps {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: blue;
+            transition: background-color 1s steps(4);
+        }
+
+        .circle-steps:hover {
+            background-color: red;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Ejercicio 1</h1>
+    <h1><span>p</span></h1>
+
+    <br><br>
+    <h1>Ejercicio 2</h1>
+    <a href="#">Enlace Animado</a>
+
+    <br><br>
+    <h1>Ejercicio 3</h1>
+    <div class="circle"></div>
+    <div class="circle-steps"></div>
+
+    <br><br>
+    <h1>Ejercicio 4</h1>
+    <canvas id="canvas" width="400" height="400"></canvas>
+
+    <script>
+        /* Ejercicio 4 */
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+
+        let radius = 20;
+        let growing = true;
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            ctx.beginPath();
+            ctx.arc(canvas.width / 2, canvas.height / 2, radius, 0, Math.PI * 2);
+            ctx.fillStyle = "blue";
+            ctx.fill();
+            ctx.closePath();
+
+            if (growing) {
+                radius += 2;
+                if (radius >= 100) growing = false;
+            } else {
+                radius -= 2;
+                if (radius <= 20) growing = true;
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
+
+
+    <br><br>
+    <h1>Ejercicio final</h1>
+    <iframe src="Banner/Banner.html" width="300" height="250" frameborder="0"></iframe>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reproductor de música en línea con soporte para múltiples formatos de audio. Escucha tus canciones favoritas con controles accesibles.">
+    <meta name="keywords" content="reproductor de música, audio online, mp3, ogg, wav, música en línea">
+    <meta name="author" content="Tu Nombre">
+    <title>Reproductor de Música Online | Audio MP3, OGG y WAV</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Datos estructurados para SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AudioObject",
+      "name": "Reproductor de Música Online",
+      "description": "Escucha música en línea con nuestro reproductor compatible con MP3, OGG y WAV.",
+      "contentUrl": "sonido.mp3",
+      "encodingFormat": "audio/mpeg"
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Reproductor de Música</h1>
+    </header>
+
+    <main>
+        <p>Reproductor compatible con MP3, OGG y WAV.</p>
+        
+        <audio id="audio" preload="metadata" controls aria-label="Reproductor de música">
+            <source src="sonido.mp3" type="audio/mp3">
+            <source src="sonido.ogg" type="audio/ogg">
+            <source src="sonido.wav" type="audio/wav">
+            Tu navegador no soporta la etiqueta de audio.
+        </audio>
+
+        <button id="playButton" aria-label="Reproducir música">▶ Play</button>
+        <button id="pauseButton" aria-label="Pausar música">⏸ Pause</button>
+
+
+        <div>
+            <img src="captura.png" alt="CDN">
+        </div>
+
+    </main>
+
+
+    <script>
+        const audio = document.getElementById("audio");
+        const playButton = document.getElementById("playButton");
+        const pauseButton = document.getElementById("pauseButton");
+
+        playButton.addEventListener("click", () => audio.play());
+        pauseButton.addEventListener("click", () => audio.pause());
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Video</title>
+    <style>
+        /* Estilos para el borde del video */
+        video {
+            border: 2px solid black;
+            width: 640px; /* Resolución SD */
+            height: 360px; /* Resolución SD */
+        }
+        .video-container {
+            text-align: center;
+        }
+        .controls {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="video-container">
+    <h1>Reproductor de Video</h1>
+
+    <video id="miVideo" width="640" height="360" controls>
+        <!-- Formatos de video en orden de compatibilidad -->
+        <source src="video_subtitulo.webm" type="video/webm">
+        <source src="video_subtitulo.mp4" type="video/mp4">
+        
+        <!-- Mensaje en caso de no ser compatible -->
+        Tu navegador no soporta ninguno de los formatos de video.
+    </video>
+</div>
+
+</body>
+</html>

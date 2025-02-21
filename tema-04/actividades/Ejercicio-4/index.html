@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar más</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #detalles {
+            display: none;
+            margin-top: 10px;
+        }
+        #mostrarMas {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="mostrarMas">Mostrar más</p>
+
+    <div id="detalles">
+        <p>Este es el contenido adicional que aparece al hacer clic en "Mostrar más".</p>
+    </div>
+
+    <script>
+        const mostrarMas = document.getElementById("mostrarMas");
+        const detalles = document.getElementById("detalles");
+
+        mostrarMas.addEventListener("click", () => {
+            if (getComputedStyle(detalles).display === "none") {
+                detalles.style.display = "block";
+                mostrarMas.textContent = "Mostrar menos";
+            } else {
+                detalles.style.display = "none";
+                mostrarMas.textContent = "Mostrar más";
+            }
+        });
+    </script>
+
+</body>
+</html>

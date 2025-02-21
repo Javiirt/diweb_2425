@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gear Up Tees - Iniciar Sesión</title>
+    <link rel="stylesheet" href="login.css"  id="stylesheet">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="media/GearUpTees.png" alt="Logo Gear Up Tees">
+            <span>Gear Up Tees</span>
+        </div>
+        <ul class="nav-links">
+            <button id="toggleMode">Cambiar a Modo Oscuro</button>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="login.html">Iniciar Sesión</a></li>
+            <li><a href="cesta.html">Cesta</a></li>
+        </ul>
+    </nav>
+
+    <!-- Cabecera -->
+    <div class="cabecera">
+        INICIAR SESIÓN
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <div class="login">
+            <!-- Iniciar sesión con Google -->
+            <div class="googleLogin">
+                <button class="btn">Iniciar sesión con Google</button>
+            </div>
+            <!-- Iniciar sesión/Crear cuenta -->
+            <div class="apartadoLogin">
+                <h3>¿No tienes cuenta?</h3>
+                <button class="btn black-btn">Crear cuenta</button>
+                <h3>Entra en tu cuenta</h3>
+                <input type="email" placeholder="Correo electrónico" class="input-field">
+                <input type="password" placeholder="Contraseña" class="input-field">
+                <button class="btn black-btn">Iniciar sesión</button>
+                <p class="forgot-password"><a href="#">¿Has olvidado tu contraseña?</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="social-links">
+            <img src="https://cdn.pixabay.com/photo/2015/08/03/13/58/whatsapp-873316_640.png" alt="WhatsApp">
+            <img src="https://cdn.pixabay.com/photo/2022/04/01/05/40/app-7104075_640.png" alt="Instagram">
+            <img src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_640.png" alt="Facebook">
+            <img src="https://cdn.pixabay.com/photo/2017/06/22/14/23/twitter-2430933_640.png" alt="Twitter">
+
+        </div>
+        <div class="footer-links">
+            <a href="#">Ayuda</a> | <a href="#">Tarjeta regalo</a> | <a href="#">Guía de tallas</a>
+        </div>
+
+        <div class="credits">
+            <p>Imágenes utilizadas con permiso de sus autores:</p>
+                <br>
+                <a href="https://www.camisetasfutboleses.com/" target="_blank">camisetasfutboleses</a>
+                <br><br>
+                <a href="https://imbictoz.com/" target="_blank">imbictoz</a>
+                <br><br>
+                <a href="https://www.futbolmania.com/" target="_blank">futbolmania</a>
+            
+        </div>
+    </footer>
+
+    <script>
+        // Obtener los elementos necesarios
+        const toggleButton = document.getElementById("toggleMode");
+        const stylesheet = document.getElementById("stylesheet");
+
+        // Función para cambiar el CSS
+        toggleButton.addEventListener("click", function () {
+            // Comprobar qué CSS está activo y cambiarlo
+            if (stylesheet.getAttribute("href") === "login.css") {
+                stylesheet.setAttribute("href", "loginOscuro.css");
+                toggleButton.textContent = "Cambiar a Modo Claro"; // Cambiar texto del botón
+            } else {
+                stylesheet.setAttribute("href", "login.css");
+                toggleButton.textContent = "Cambiar a Modo Oscuro"; // Cambiar texto del botón
+            }
+        });
+    </script>
+</body>
+
+</html>

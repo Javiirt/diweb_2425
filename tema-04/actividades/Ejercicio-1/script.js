@@ -1,12 +1,12 @@
-const button = document.getElementById("toggleButton");
-const detalles = document.getElementById("detalles");
+function toggleDetalles() {
+    const detalles = document.getElementById("detalles");
+    const titulo = document.querySelector(".titulo");
 
-button.addEventListener("click", () => {
-    if (detalles.classList.contains("hidden")) {
-        detalles.classList.remove("hidden");
-        button.textContent = "Mostrar más";
+    if (detalles.classList.contains("oculto")) {
+        detalles.classList.remove("oculto");
+        titulo.innerHTML = "▼ Mostrar más";
     } else {
-        detalles.classList.add("hidden");
-        button.textContent = "Mostrar menos";
+        detalles.classList.add("oculto");
+        titulo.innerHTML = "▶ Mostrar más";
     }
-});
+}

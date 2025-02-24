@@ -3,46 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mostrar más</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-        #detalles {
-            display: none;
-            margin-top: 10px;
-        }
-        #mostrarMas {
-            cursor: pointer;
-            color: blue;
-            text-decoration: underline;
-        }
-    </style>
+    <title>Formulario Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-    <p id="mostrarMas">Mostrar más</p>
+    <form id="miFormulario">
+        <fieldset>
+            <legend>Información Personal</legend>
 
-    <div id="detalles">
-        <p>Este es el contenido adicional que aparece al hacer clic en "Mostrar más".</p>
-    </div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="20" accesskey="n" tabindex="1">
 
-    <script>
-        const mostrarMas = document.getElementById("mostrarMas");
-        const detalles = document.getElementById("detalles");
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required accesskey="e" tabindex="2">
 
-        mostrarMas.addEventListener("click", () => {
-            if (getComputedStyle(detalles).display === "none") {
-                detalles.style.display = "block";
-                mostrarMas.textContent = "Mostrar menos";
-            } else {
-                detalles.style.display = "none";
-                mostrarMas.textContent = "Mostrar más";
-            }
-        });
-    </script>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="18" max="100" required tabindex="3">
+        </fieldset>
+
+        <fieldset>
+            <legend>Detalles Adicionales</legend>
+
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required tabindex="4">
+                <option value="">Seleccione</option>
+                <option value="es">España</option>
+                <option value="mx">México</option>
+                <option value="ar">Argentina</option>
+            </select>
+
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" tabindex="5"></textarea>
+
+            <label>
+                <input type="checkbox" id="terminos" required tabindex="6">
+                Acepto los términos y condiciones
+            </label>
+        </fieldset>
+
+        <button type="submit" id="enviarBtn" accesskey="s" tabindex="7">Enviar</button>
+    </form>
+
+    <p id="mensaje" class="oculto">¡Formulario enviado con éxito! 🎉</p>
 
 </body>
 </html>

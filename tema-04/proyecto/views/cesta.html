@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
-    <link rel="stylesheet" id="stylesheet" href="cesta.css">
+    <link rel="stylesheet" id="stylesheet" href="../styles/cesta.css">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <!-- Barra de navegación -->
     <nav class="navbar">
         <div class="logo">
-            <img src="media/GearUpTees.png" alt="Logo Gear Up Tees">
+            <img src="../media/GearUpTees.png" alt="Logo Gear Up Tees">
             <span>Gear Up Tees</span>
         </div>
         <ul class="nav-links">
@@ -35,9 +35,9 @@
             <!-- Primer item del carrito -->
             <div class="card">
                 <picture>
-                    <source srcset="media/madrid.avif" type="image/avif">
-                    <source srcset="media/madrid.png" type="image/png">
-                    <img src="media/madrid.jpg" alt="Camiseta madrid 2023">
+                    <source srcset="../media/madrid.avif" type="image/avif">
+                    <source srcset="../media/madrid.png" type="image/png">
+                    <img src="../media/madrid.jpg" alt="Camiseta madrid 2023">
                 </picture>
                 <div class="card-info">
                     <h3>Camiseta Real Madrid 2023</h3>
@@ -53,9 +53,9 @@
             <!-- Segundo item del carrito -->
             <div class="card">
                 <picture>
-                    <source srcset="media/barcelona.avif" type="image/avif">
-                    <source srcset="media/barcelona.png" type="image/png">
-                    <img src="media/barcelona.jpg" alt="Camiseta Barcelona 2023">
+                    <source srcset="../media/barcelona.avif" type="image/avif">
+                    <source srcset="../media/barcelona.png" type="image/png">
+                    <img src="../media/barcelona.jpg" alt="Camiseta Barcelona 2023">
                 </picture>
                 <div class="card-info">
                     <h3>Camiseta 1ª FC Barcelona 2023</h3>
@@ -90,7 +90,7 @@
         <section class="video">
             <h3>Video del Producto</h3>
             <video width="180" height="280" controls>
-                <source src="media/camisetas.mp4" type="video/mp4">
+                <source src="../media/camisetas.mp4" type="video/mp4">
                 Tu navegador no soporta la etiqueta de video.
             </video>
         </section>
@@ -128,11 +128,11 @@
         // Función para cambiar el CSS
         toggleButton.addEventListener("click", function () {
             // Comprobar qué CSS está activo y cambiarlo
-            if (stylesheet.getAttribute("href") === "cesta.css") {
-                stylesheet.setAttribute("href", "cestaOscuro.css");
+            if (stylesheet.getAttribute("href") === "../styles/cesta.css") {
+                stylesheet.setAttribute("href", "../styles/cestaOscuro.css");
                 toggleButton.textContent = "Cambiar a Modo Claro"; // Cambiar texto del botón
             } else {
-                stylesheet.setAttribute("href", "cesta.css");
+                stylesheet.setAttribute("href", "../styles/cesta.css");
                 toggleButton.textContent = "Cambiar a Modo Oscuro"; // Cambiar texto del botón
             }
         });

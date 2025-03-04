@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gear Up Tees - Iniciar Sesión</title>
-    <link rel="stylesheet" href="login.css"  id="stylesheet">
+    <link rel="stylesheet" href="../styles/login.css"  id="stylesheet">
 </head>
 
 <body>
     <!-- Barra de navegación -->
     <nav class="navbar">
         <div class="logo">
-            <img src="media/GearUpTees.png" alt="Logo Gear Up Tees">
+            <img src="../media/GearUpTees.png" alt="Logo Gear Up Tees">
             <span>Gear Up Tees</span>
         </div>
         <ul class="nav-links">
@@ -81,11 +81,11 @@
         // Función para cambiar el CSS
         toggleButton.addEventListener("click", function () {
             // Comprobar qué CSS está activo y cambiarlo
-            if (stylesheet.getAttribute("href") === "login.css") {
-                stylesheet.setAttribute("href", "loginOscuro.css");
+            if (stylesheet.getAttribute("href") === "../styles/login.css") {
+                stylesheet.setAttribute("href", "../styles/loginOscuro.css");
                 toggleButton.textContent = "Cambiar a Modo Claro"; // Cambiar texto del botón
             } else {
-                stylesheet.setAttribute("href", "login.css");
+                stylesheet.setAttribute("href", "../styles/login.css");
                 toggleButton.textContent = "Cambiar a Modo Oscuro"; // Cambiar texto del botón
             }
         });

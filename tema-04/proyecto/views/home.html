@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gear Up Tees</title>
     <!-- Aquí se añade el id al enlace de la hoja de estilos -->
-    <link rel="stylesheet" href="home.css" id="stylesheet">
+    <link rel="stylesheet" href="../styles/home.css" id="stylesheet">
 
 </head>
 
@@ -14,7 +14,7 @@
     <!-- Barra de navegación -->
     <nav class="navbar">
         <div class="logo">
-            <img src="media/GearUpTees.png" alt="Logo Gear Up Tees">
+            <img src="../media/GearUpTees.png" alt="Logo Gear Up Tees">
             <span>Gear Up Tees</span>
         </div>
         <ul class="nav-links">
@@ -34,7 +34,7 @@
     <section class="featured">
         <h2>Productos más vendidos</h2>
         <div class="featured-item">
-            <img src="media/gift_camisetas.gif" alt="Producto destacado">
+            <img src="../media/gift_camisetas.gif" alt="Producto destacado">
         </div>
     </section>
 
@@ -42,9 +42,9 @@
     <section class="products">
         <div class="product-card">
             <picture>
-                <source srcset="media/barcelona.avif" type="image/avif">
-                <source srcset="media/barcelona.png" type="image/png">
-                <img src="media/barcelona.jpg" alt="Camiseta Barcelona 2023">
+                <source srcset="../media/barcelona.avif" type="image/avif">
+                <source srcset="../media/barcelona.png" type="image/png">
+                <img src="../media/barcelona.jpg" alt="Camiseta Barcelona 2023">
             </picture>
             <h3>Camiseta del Barcelona 2023</h3>
             <p class="price">20€</p>
@@ -52,9 +52,9 @@
         </div>
         <div class="product-card">
             <picture>
-                <source srcset="media/madrid.avif" type="image/avif">
-                <source srcset="media/madrid.png" type="image/png">
-                <img src="media/madrid.jpg" alt="Camiseta madrid 2023">
+                <source srcset="../media/madrid.avif" type="image/avif">
+                <source srcset="../media/madrid.png" type="image/png">
+                <img src="../media/madrid.jpg" alt="Camiseta madrid 2023">
             </picture>
             <h3>Camiseta del Real Madrid 2023</h3>
             <p class="price">20€</p>
@@ -62,9 +62,9 @@
         </div>
         <div class="product-card">
             <picture>
-                <source srcset="media/betis.avif" type="image/avif">
-                <source srcset="media/betis.png" type="image/png">
-                <img src="media/betis.jpg" alt="Camiseta betis 2023">
+                <source srcset="../media/betis.avif" type="image/avif">
+                <source srcset="../media/betis.png" type="image/png">
+                <img src="../media/betis.jpg" alt="Camiseta betis 2023">
             </picture>
             <h3>Camiseta del Real Betis 2023</h3>
             <p class="price">20€</p>
@@ -72,9 +72,9 @@
         </div>
         <div class="product-card">
             <picture>
-                <source srcset="media/cadiz.avif" type="image/avif">
-                <source srcset="media/cadiz.png" type="image/png">
-                <img src="media/cadiz.jpg" alt="Camiseta cadiz 2023">
+                <source srcset="../media/cadiz.avif" type="image/avif">
+                <source srcset="../media/cadiz.png" type="image/png">
+                <img src="../media/cadiz.jpg" alt="Camiseta cadiz 2023">
             </picture>
             <h3>Camiseta del Cádiz CF 2023</h3>
             <p class="price">20€</p>
@@ -108,7 +108,7 @@
     </footer>
 
     <!-- Añadir elemento de audio -->
-    <audio id="addToCartSound" src="media/siu.mp3" preload="auto"></audio>
+    <audio id="addToCartSound" src="../media/siu.mp3" preload="auto"></audio>
 
 
     <script>
@@ -122,11 +122,11 @@
         // Función para cambiar el CSS
         toggleButton.addEventListener("click", function () {
             // Comprobar qué CSS está activo y cambiarlo
-            if (stylesheet.getAttribute("href") === "home.css") {
-                stylesheet.setAttribute("href", "homeOscuro.css");
+            if (stylesheet.getAttribute("href") === "../styles/home.css") {
+                stylesheet.setAttribute("href", "../styles/homeOscuro.css");
                 toggleButton.textContent = "Cambiar a Modo Claro"; // Cambiar texto del botón
             } else {
-                stylesheet.setAttribute("href", "home.css");
+                stylesheet.setAttribute("href", "../styles/home.css");
                 toggleButton.textContent = "Cambiar a Modo Oscuro"; // Cambiar texto del botón
             }
         });

@@ -188,3 +188,55 @@ body {
         gap: 10px;
     }
 }
+
+
+
+/* Estilos del Dialog */
+dialog {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: #312f2f;
+    text-align: center;
+    width: 300px;
+    max-width: 80%;
+  }
+  
+  /* Estilo del texto dentro del diálogo */
+  dialog p {
+    font-size: 19px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  /* Botón de cierre del diálogo */
+  dialog button {
+    background-color: #fc3d3d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  dialog button:hover {
+    background-color: #d63147;
+  }
+  
+  /* Animación de apertura del diálogo */
+  dialog[open] {
+    animation: fadeInDialog 0.4s ease-out;
+  }
+  
+  @keyframes fadeInDialog {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

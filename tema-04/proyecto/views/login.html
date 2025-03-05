@@ -31,19 +31,28 @@
     <!-- Contenido principal -->
     <div class="main-content">
         <div class="login">
-            <!-- Iniciar sesión con Google -->
-            <div class="googleLogin">
-                <button class="btn">Iniciar sesión con Google</button>
-            </div>
-            <!-- Iniciar sesión/Crear cuenta -->
+            <!-- Iniciar sesión -->
             <div class="apartadoLogin">
-                <h3>¿No tienes cuenta?</h3>
-                <button class="btn black-btn">Crear cuenta</button>
-                <h3>Entra en tu cuenta</h3>
-                <input type="email" placeholder="Correo electrónico" class="input-field">
-                <input type="password" placeholder="Contraseña" class="input-field">
-                <button class="btn black-btn">Iniciar sesión</button>
+                <h2>Entra en tu cuenta</h2>
+                <form>
+                    <input type="email" placeholder="Correo electrónico" class="input-field" required>
+                    <input type="password" placeholder="Contraseña" class="input-field" required>
+                    <button type="submit" class="btn black-btn" id="loginButton">Iniciar sesión</button>
+                    <button class="googleLogin" id="loginGoogleButton">Iniciar sesión con Google</button>
+
+                </form>
                 <p class="forgot-password"><a href="#">¿Has olvidado tu contraseña?</a></p>
+            </div>
+            <!-- Formulario de registro -->
+            <div class="register">
+                <h2>Crear una cuenta</h2>
+                <form>
+                    <input type="text" placeholder="Nombre completo" class="input-field" required>
+                    <input type="email" placeholder="Correo electrónico" class="input-field" required>
+                    <input type="password" placeholder="Contraseña" class="input-field" required>
+                    <input type="password" placeholder="Confirmar contraseña" class="input-field" required>
+                    <button type="submit" class="btn black-btn" id="registroButton">Registrarse</button>
+                </form>
             </div>
         </div>
     </div>
@@ -72,6 +81,18 @@
             
         </div>
     </footer>
+
+    <!-- Diálogo login -->
+    <dialog id="loginDialog">
+        <p>Sesión iniciada con éxito</p>
+        <button id="loginCloseDialog">Cerrar</button>
+    </dialog>
+
+    <!-- Diálogo registrar -->
+    <dialog id="registroDialog">
+        <p>Usuario registrado con éxito</p>
+        <button id="registroCloseDialog">Cerrar</button>
+    </dialog>
 
     <!-- Enlazamos el script -->
     <script src="../scripts/script.js" defer></script>

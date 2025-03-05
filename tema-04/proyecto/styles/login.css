@@ -1,20 +1,6 @@
 @import url('estiloComun.css');
 
 
-/* Cabecera */
-.cabecera {
-    background-color: #ff3b30;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 64px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    margin-bottom: 20px;
-}
-
 /* Main Content */
 .main-content {
     display: flex;

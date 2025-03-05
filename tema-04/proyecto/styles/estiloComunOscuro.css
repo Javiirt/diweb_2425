@@ -87,6 +87,20 @@ body {
     color: #f1f1f1;
 }
 
+/* Cabecera */
+.cabecera {
+    background-color: #ff6f61;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #121212;
+    font-size: 64px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
 /* Footer */
 .footer {
     background-color: #1e1e1e;

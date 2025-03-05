@@ -48,7 +48,7 @@
             </picture>
             <h3>Camiseta del Barcelona 2023</h3>
             <p class="price">20€</p>
-            <button >Añadir al carrito</button>
+            <button>Añadir al carrito</button>
         </div>
         <div class="product-card">
             <picture>
@@ -58,7 +58,7 @@
             </picture>
             <h3>Camiseta del Real Madrid 2023</h3>
             <p class="price">20€</p>
-            <button >Añadir al carrito</button>
+            <button>Añadir al carrito</button>
         </div>
         <div class="product-card">
             <picture>
@@ -68,7 +68,7 @@
             </picture>
             <h3>Camiseta del Real Betis 2023</h3>
             <p class="price">20€</p>
-            <button >Añadir al carrito</button>
+            <button>Añadir al carrito</button>
         </div>
         <div class="product-card">
             <picture>
@@ -78,7 +78,7 @@
             </picture>
             <h3>Camiseta del Cádiz CF 2023</h3>
             <p class="price">20€</p>
-            <button >Añadir al carrito</button>
+            <button>Añadir al carrito</button>
         </div>
     </section>
 
@@ -111,33 +111,8 @@
     <audio id="addToCartSound" src="../media/siu.mp3" preload="auto"></audio>
 
 
-    <script>
-        // Obtener los elementos necesarios
-        const toggleButton = document.getElementById("toggleMode");
-        const stylesheet = document.getElementById("stylesheet");
-        const addToCartButtons = document.querySelectorAll(".product-card button");
-        const addToCartSound = document.getElementById("addToCartSound");
-
-
-        // Función para cambiar el CSS
-        toggleButton.addEventListener("click", function () {
-            // Comprobar qué CSS está activo y cambiarlo
-            if (stylesheet.getAttribute("href") === "../styles/home.css") {
-                stylesheet.setAttribute("href", "../styles/homeOscuro.css");
-                toggleButton.textContent = "Cambiar a Modo Claro"; // Cambiar texto del botón
-            } else {
-                stylesheet.setAttribute("href", "../styles/home.css");
-                toggleButton.textContent = "Cambiar a Modo Oscuro"; // Cambiar texto del botón
-            }
-        });
-
-        // Añadir evento de clic a los botones de "Añadir al carrito"
-        addToCartButtons.forEach(button => {
-            button.addEventListener("click", function () {
-                addToCartSound.play();
-            });
-        });
-    </script>
+    <!-- Enlazamos el script -->
+    <script src="../scripts/script.js" defer></script>
 
 </body>
 

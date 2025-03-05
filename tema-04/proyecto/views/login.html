@@ -73,23 +73,9 @@
         </div>
     </footer>
 
-    <script>
-        // Obtener los elementos necesarios
-        const toggleButton = document.getElementById("toggleMode");
-        const stylesheet = document.getElementById("stylesheet");
-
-        // Función para cambiar el CSS
-        toggleButton.addEventListener("click", function () {
-            // Comprobar qué CSS está activo y cambiarlo
-            if (stylesheet.getAttribute("href") === "../styles/login.css") {
-                stylesheet.setAttribute("href", "../styles/loginOscuro.css");
-                toggleButton.textContent = "Cambiar a Modo Claro"; // Cambiar texto del botón
-            } else {
-                stylesheet.setAttribute("href", "../styles/login.css");
-                toggleButton.textContent = "Cambiar a Modo Oscuro"; // Cambiar texto del botón
-            }
-        });
-    </script>
+    <!-- Enlazamos el script -->
+    <script src="../scripts/script.js" defer></script>
+    
 </body>
 
 </html>

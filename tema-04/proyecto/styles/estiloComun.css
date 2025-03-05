@@ -84,6 +84,21 @@ body {
     background-color: black;
 }
 
+
+/* Cabecera */
+.cabecera {
+    background-color: #ef5151;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
 /* Footer */
 .footer {
     background-color: #f1f1f1;

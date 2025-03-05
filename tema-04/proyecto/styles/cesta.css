@@ -1,17 +1,5 @@
 @import url('estiloComun.css');
 
-/* Header Styles */
-.header {
-    position: sticky;
-    top: 0;
-    background-color: #ff3b30;
-    color: white;
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-    padding: 50px 0;
-    z-index: 1000;
-}
 
 /* Main Content Styles */
 .main-content {

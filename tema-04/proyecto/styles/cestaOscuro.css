@@ -1,18 +1,6 @@
 /* Estilo común al modo oscuro */
 @import url('estiloComunOscuro.css');
 
-/* Header Styles */
-.header {
-    position: sticky;
-    top: 0;
-    background-color: #333; /* Dark header background */
-    color: #ffffff;
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-    padding: 50px 0;
-    z-index: 1000;
-}
 
 /* Main Content Styles */
 .main-content {

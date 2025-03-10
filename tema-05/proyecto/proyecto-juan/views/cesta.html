@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" id="stylesheet" href="../styles/cesta.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../media/GearUpTees.png" alt="Logo Gear Up Tees">
+            <span>Gear Up Tees</span>
+        </div>
+        <ul class="nav-links">
+            <button id="toggleMode">Cambiar a Modo Oscuro</button>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="login.html">Iniciar Sesión</a></li>
+            <li><a href="cesta.html">Cesta</a></li>
+        </ul>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="cabecera">
+        CESTA
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <section class="cart-items">
+            <!-- Primer item del carrito -->
+            <div class="card">
+                <picture>
+                    <source srcset="../media/madrid.avif" type="image/avif">
+                    <source srcset="../media/madrid.png" type="image/png">
+                    <img src="../media/madrid.jpg" alt="Camiseta madrid 2023">
+                </picture>
+                <div class="card-info">
+                    <h3>Camiseta Real Madrid 2023</h3>
+                    <p>adidas - Fútbol - Niño</p>
+                    <p>Talla: 12 años</p>
+                    <p>Cantidad: 1</p>
+                </div>
+                <div class="card-price">
+                    <p>20€</p>
+                    <details>
+                        <summary style="font-weight: normal;">Ver desglose</summary>
+                        <p style="font-weight: normal;">Precio sin IVA: 16.53€</p>
+                        <p style="font-weight: normal;">IVA (21%): 3.47€</p>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Segundo item del carrito -->
+            <div class="card">
+                <picture>
+                    <source srcset="../media/barcelona.avif" type="image/avif">
+                    <source srcset="../media/barcelona.png" type="image/png">
+                    <img src="../media/barcelona.jpg" alt="Camiseta Barcelona 2023">
+                </picture>
+                <div class="card-info">
+                    <h3>Camiseta 1ª FC Barcelona 2023</h3>
+                    <p>Nike - Fútbol - Hombre</p>
+                    <p>Talla: S</p>
+                    <p>Cantidad: 1</p>
+                </div>
+                <div class="card-price">
+                    <p>20€</p>
+                    <details>
+                        <summary style="font-weight: normal;">Ver desglose</summary>
+                        <p style="font-weight: normal;">Precio sin IVA: 16.53€</p>
+                        <p style="font-weight: normal;">IVA (21%): 3.47€</p>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Resumen del pedido -->
+            <section class="summary">
+                <h3>Resumen</h3>
+                <div class="summary-item">
+                    <p>Subtotal</p>
+                    <p>40€</p>
+                </div>
+                <div class="summary-item">
+                    <p>Gastos de envío estimado</p>
+                    <p>GRATIS</p>
+                </div>
+                <div class="summary-item total">
+                    <p>Total</p>
+                    <p>40€</p>
+                </div>
+                <details>
+                    <summary style="font-weight: normal;">Ver desglose</summary>
+                    <p>Precio sin IVA: 33.06€</p>
+                    <p style="font-weight: normal;">IVA (21%): 6.94€</p>
+                </details>
+            </section>
+
+        </section>
+
+        <!-- Formulario de Pago -->
+        <section class="payment-form">
+            <h3>Formulario de Pago</h3>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre Completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Dirección</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="card">Número de Tarjeta</label>
+                    <input type="text" id="card" name="card" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry">Fecha de Expiración</label>
+                    <input type="text" id="expiry" name="expiry" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                </div>
+                <button type="submit" id="pagoButton">Pagar</button>
+            </form>
+        </section>
+
+        <!-- Video -->
+        <section class="video">
+            <h3>Video del Producto</h3>
+            <video width="300" height="500" controls>
+                <source src="../media/camisetas.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </section>
+    </main>
+
+
+
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="social-links">
+            <img src="https://cdn.pixabay.com/photo/2015/08/03/13/58/whatsapp-873316_640.png" alt="WhatsApp">
+            <img src="https://cdn.pixabay.com/photo/2022/04/01/05/40/app-7104075_640.png" alt="Instagram">
+            <img src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_640.png" alt="Facebook">
+            <img src="https://cdn.pixabay.com/photo/2017/06/22/14/23/twitter-2430933_640.png" alt="Twitter">
+
+        </div>
+        <div class="footer-links">
+            <a href="#">Ayuda</a> | <a href="#">Tarjeta regalo</a> | <a href="#">Guía de tallas</a>
+        </div>
+        <div class="credits">
+            <p>Imágenes utilizadas con permiso de sus autores:</p>
+            <br>
+            <a href="https://www.camisetasfutboleses.com/" target="_blank">camisetasfutboleses</a>
+            <br><br>
+            <a href="https://imbictoz.com/" target="_blank">imbictoz</a>
+            <br><br>
+            <a href="https://www.futbolmania.com/" target="_blank">futbolmania</a>
+
+        </div>
+    </footer>
+
+    <!-- Diálogo nativo -->
+    <dialog id="pagoDialog">
+        <p>Pago realizado con éxito</p>
+        <button id="pagoCloseDialog">Cerrar</button>
+    </dialog>
+
+    <!-- Enlazamos el script -->
+    <script src="../scripts/script.js" defer></script>
+
+</body>
+
+</html>

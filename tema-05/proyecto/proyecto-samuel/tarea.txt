@@ -1,0 +1,9 @@
+animacion : que el logo gire con hover (Samuel)
+
+gift: camisetas mas vendidas (Wan)
+
+derechos de autor: referenciar autores en el pie de pagina (Wan)
+
+descargar imagenes, con diferentes formatos y poner alternativas (Javi)
+
+imagenes personalizadas (Samuel)

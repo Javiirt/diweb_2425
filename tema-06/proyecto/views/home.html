@@ -12,26 +12,28 @@
 
 <body>
     <!-- Barra de navegación -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="../media/GearUpTees.png" alt="Logo Gear Up Tees">
-            <span>Gear Up Tees</span>
-        </div>
-        <ul class="nav-links">
-            <button id="toggleMode">Cambiar a Modo Oscuro</button>
-            <li><a href="home.html">Inicio</a></li>
-            <li><a href="login.html">Iniciar Sesión</a></li>
-            <li><a href="cesta.html">Cesta</a></li>
-        </ul>
-    </nav>
-
-    <!-- Encabezado principal -->
-    <header class="cabecera">
-        <h1>Gear Up Tees</h1>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Menú principal">
+            <div class="logo">
+                <img src="../media/GearUpTees.png" alt="Logo Gear Up Tees">
+                <span>Gear Up Tees</span>
+            </div>
+            <ul class="nav-links">
+                <button id="toggleMode" aria-label="Cambiar a Modo Oscuro">Cambiar a Modo Oscuro</button>
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="login.html" aria-current="page">Iniciar Sesión</a></li>
+                <li><a href="cesta.html">Cesta</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Cabecera -->
+    <section class="cabecera">
+        <h1>Gear Up Tees</h1>
+    </section>
+
     <!-- Sección de productos destacados -->
-    <section class="featured">
+    <section class="featured" role="region" aria-labelledby="featured-products">
         <h2>Productos más vendidos</h2>
         <div class="featured-item">
             <img src="../media/gift_camisetas.gif" alt="Producto destacado">
@@ -39,7 +41,7 @@
     </section>
 
     <!-- Sección de productos -->
-    <section class="products">
+    <section class="products" role="region" aria-labelledby="products">
         <div class="product-card">
             <picture>
                 <source srcset="../media/barcelona.avif" type="image/avif">
@@ -48,7 +50,7 @@
             </picture>
             <h3>Camiseta del Barcelona 2023</h3>
             <p class="price">20€</p>
-            <button>Añadir al carrito</button>
+            <button aria-label="Añadir Camiseta del Barcelona 2023 al carrito">Añadir al carrito</button>
         </div>
         <div class="product-card">
             <picture>
@@ -58,7 +60,7 @@
             </picture>
             <h3>Camiseta del Real Madrid 2023</h3>
             <p class="price">20€</p>
-            <button>Añadir al carrito</button>
+            <button aria-label="Añadir Camiseta del Real Madrid 2023 al carrito">Añadir al carrito</button>
         </div>
         <div class="product-card">
             <picture>
@@ -68,7 +70,7 @@
             </picture>
             <h3>Camiseta del Real Betis 2023</h3>
             <p class="price">20€</p>
-            <button>Añadir al carrito</button>
+            <button aria-label="Añadir Camiseta del Real Betis 2023 al carrito">Añadir al carrito</button>
         </div>
         <div class="product-card">
             <picture>
@@ -78,7 +80,7 @@
             </picture>
             <h3>Camiseta del Cádiz CF 2023</h3>
             <p class="price">20€</p>
-            <button>Añadir al carrito</button>
+            <button aria-label="Añadir Camiseta del Cádiz CF 2023 al carrito">Añadir al carrito</button>
         </div>
     </section>
 
@@ -89,6 +91,7 @@
             <img src="https://cdn.pixabay.com/photo/2022/04/01/05/40/app-7104075_640.png" alt="Instagram">
             <img src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_640.png" alt="Facebook">
             <img src="https://cdn.pixabay.com/photo/2017/06/22/14/23/twitter-2430933_640.png" alt="Twitter">
+
         </div>
         <div class="footer-links">
             <a href="#">Ayuda</a> | <a href="#">Tarjeta regalo</a> | <a href="#">Guía de tallas</a>
@@ -103,6 +106,13 @@
             <br><br>
             <a href="https://www.futbolmania.com/" target="_blank">futbolmania</a>
 
+        </div>
+
+        <!-- Sección de certificado -->
+        <div class="certification">
+            <p>Certificado de Accesibilidad</p>
+            <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" title="Explicación del Nivel Doble-A de Conformidad">
+                <img height="32" width="88" src="http://www.w3.org/WAI/wcag1AA" alt="Icono de conformidad con el Nivel Doble-A, de las Directrices de Accesibilidad para el Contenido Web 1.0 del W3C-WAI" /></a>
         </div>
     </footer>
 

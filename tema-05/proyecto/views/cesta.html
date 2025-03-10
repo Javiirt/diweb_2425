@@ -11,29 +11,32 @@
 <body>
 
     <!-- Barra de navegación -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="../media/GearUpTees.png" alt="Logo Gear Up Tees">
-            <span>Gear Up Tees</span>
-        </div>
-        <ul class="nav-links">
-            <button id="toggleMode">Cambiar a Modo Oscuro</button>
-            <li><a href="home.html">Inicio</a></li>
-            <li><a href="login.html">Iniciar Sesión</a></li>
-            <li><a href="cesta.html">Cesta</a></li>
-        </ul>
-    </nav>
-
-    <!-- Encabezado -->
-    <header class="cabecera">
-        CESTA
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+            <div class="logo">
+                <img src="../media/GearUpTees.png" alt="Logo Gear Up Tees">
+                <span>Gear Up Tees</span>
+            </div>
+            <ul class="nav-links">
+                <button id="toggleMode" aria-label="Cambiar a Modo Oscuro">Cambiar a Modo Oscuro</button>
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="cesta.html" aria-current="page">Cesta</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Cabecera -->
+    <section class="cabecera">
+        CESTA
+    </section>
+
     <!-- Contenido principal -->
-    <main class="main-content">
-        <section class="cart-items">
+    <main class="main-content" role="main">
+        <section class="cart-items" aria-labelledby="cart-items-heading">
+            <h2 id="cart-items-heading">Artículos en la Cesta</h2>
             <!-- Primer item del carrito -->
-            <div class="card">
+            <article class="card" role="article">
                 <picture>
                     <source srcset="../media/madrid.avif" type="image/avif">
                     <source srcset="../media/madrid.png" type="image/png">
@@ -53,10 +56,10 @@
                         <p style="font-weight: normal;">IVA (21%): 3.47€</p>
                     </details>
                 </div>
-            </div>
+            </article>
 
             <!-- Segundo item del carrito -->
-            <div class="card">
+            <article class="card" role="article">
                 <picture>
                     <source srcset="../media/barcelona.avif" type="image/avif">
                     <source srcset="../media/barcelona.png" type="image/png">
@@ -76,11 +79,11 @@
                         <p style="font-weight: normal;">IVA (21%): 3.47€</p>
                     </details>
                 </div>
-            </div>
+            </article>
 
             <!-- Resumen del pedido -->
-            <section class="summary">
-                <h3>Resumen</h3>
+            <section class="summary" aria-labelledby="summary-heading">
+                <h2 id="summary-heading">Resumen</h2>
                 <div class="summary-item">
                     <p>Subtotal</p>
                     <p>40€</p>
@@ -103,8 +106,8 @@
         </section>
 
         <!-- Formulario de Pago -->
-        <section class="payment-form">
-            <h3>Formulario de Pago</h3>
+        <section class="payment-form" aria-labelledby="payment-form-heading">
+            <h2 id="payment-form-heading">Formulario de Pago</h2>
             <form>
                 <div class="form-group">
                     <label for="name">Nombre Completo</label>
@@ -135,8 +138,8 @@
         </section>
 
         <!-- Video -->
-        <section class="video">
-            <h3>Video del Producto</h3>
+        <section class="video" aria-labelledby="video-heading">
+            <h2 id="video-heading">Video del Producto</h2>
             <video width="300" height="500" controls>
                 <source src="../media/camisetas.mp4" type="video/mp4">
                 Tu navegador no soporta la etiqueta de video.
@@ -144,11 +147,8 @@
         </section>
     </main>
 
-
-
-
     <!-- Pie de página -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="social-links">
             <img src="https://cdn.pixabay.com/photo/2015/08/03/13/58/whatsapp-873316_640.png" alt="WhatsApp">
             <img src="https://cdn.pixabay.com/photo/2022/04/01/05/40/app-7104075_640.png" alt="Instagram">
@@ -169,11 +169,18 @@
             <a href="https://www.futbolmania.com/" target="_blank">futbolmania</a>
 
         </div>
+
+        <!-- Sección de certificado -->
+        <div class="certification">
+            <p>Certificado de Accesibilidad</p>
+            <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" title="Explicación del Nivel Doble-A de Conformidad">
+                <img height="32" width="88" src="http://www.w3.org/WAI/wcag1AA" alt="Icono de conformidad con el Nivel Doble-A, de las Directrices de Accesibilidad para el Contenido Web 1.0 del W3C-WAI" /></a>
+        </div>
     </footer>
 
     <!-- Diálogo nativo -->
-    <dialog id="pagoDialog">
-        <p>Pago realizado con éxito</p>
+    <dialog id="pagoDialog" role="dialog" aria-labelledby="dialog-title">
+        <p id="dialog-title">Pago realizado con éxito</p>
         <button id="pagoCloseDialog">Cerrar</button>
     </dialog>
 

@@ -3,7 +3,7 @@
 
 
 /* Estilos del Encabezado Principal */
-header.cabecera {
+section.cabecera {
     background-image: url("..\\media\\FondoHome.png");
     background-color: #ef5151;
     color: white;
@@ -15,10 +15,13 @@ header.cabecera {
 }
 
 
-header.cabecera h1 {
-    font-size: 3rem;
-    margin: 0;
+section.cabecera h1 {
+    color: White; /* Asegura que el texto sea visible */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Sombra para resaltar */
+    padding: 10px; /* Espaciado para que el borde no toque el texto */
+    display: inline-block; /* Para que el borde solo rodee el texto */
 }
+
 
 /* Sección de productos destacados */
 .featured {

@@ -2,7 +2,7 @@
 @import url('estiloComunOscuro.css');
 
 /* Estilos del Encabezado Principal */
-header.cabecera {
+section.cabecera {
     background-image: url("..\\media\\FondoHome.png");
     background-color: #fe2a00;
     background-size: cover;
@@ -14,9 +14,9 @@ header.cabecera {
     background-repeat: no-repeat;
 }
 
-header.cabecera h1 {
-    font-size: 48px;
-    margin: 0;
+section.cabecera h1 {
+    color: black; 
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5); 
 }
 
 /* Sección de productos destacados */
